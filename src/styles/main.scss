@@ -1,0 +1,18 @@
+/*** FONTS ***/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&family=Roboto:wght@100&display=swap');
+
+/*** BASE ***/
+@import 'base/normalize';
+@import 'base/reset.local';
+@import 'base/typography';
+
+/*** COMPONENTS ***/
+
+/*** LAYOUT ***/
+@import 'layout/_header.scss';
+
+/*** SECTIONS ***/
+@import 'sections/_hero.scss';
+
+/*** UTILITIES ***/
+@import 'utilities/_variables.scss';
