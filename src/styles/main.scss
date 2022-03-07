@@ -3,17 +3,19 @@
 
 /*** BASE ***/
 @import 'base/normalize';
-@import 'base/reset.local';
+@import 'base/reset-local';
 @import 'base/typography';
 
 /*** COMPONENTS ***/
 @import 'components/_wrapper.scss';
+@import 'components/_buttons.scss';
 
 /*** LAYOUT ***/
 @import 'layout/_header.scss';
 
 /*** SECTIONS ***/
 @import 'sections/_hero.scss';
+@import 'sections/_interior-details.scss';
 
 /*** UTILITIES ***/
 @import 'utilities/_variables.scss';

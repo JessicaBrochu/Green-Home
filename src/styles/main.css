@@ -417,6 +417,12 @@ body {
   margin: 0 auto;
 }
 
+.button {
+  padding: 10px 30px;
+  color: var(--color-content-action);
+  background-color: var(--color-background-action);
+}
+
 /*** LAYOUT ***/
 header {
   height: 8vh;
@@ -440,7 +446,7 @@ header .hamburger {
 /*** SECTIONS ***/
 .hero {
   display: flex;
-  height: 85vh;
+  height: 92vh;
   position: relative;
 }
 .hero .wrapper {
@@ -457,18 +463,63 @@ header .hamburger {
   padding-right: 80px;
 }
 .hero .hero__content h1 {
-  padding: 20px 0 10px 0;
+  padding-bottom: 20px;
+}
+.hero .hero__content p {
+  padding-bottom: 20px;
 }
 .hero .hero__media {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 50%;
-  height: 85vh;
-  background-image: url("/src/images/green-room-720x885.jpg");
+  height: 100%;
+  background-image: url("/src/images/green-room-720x800.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.interior-details {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+.interior-details .wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.interior-details .interior-details__content {
+  width: 50%;
+  padding-right: 80px;
+  position: relative;
+}
+.interior-details .interior-details__content .button {
+  position: absolute;
+  bottom: -100px;
+}
+.interior-details .interior-details__content h2 {
+  padding: 20px 0 25px 0;
+}
+.interior-details .interior-details__media {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: var(--color-background-secondary);
+}
+.interior-details .interior-details__media img {
+  object-fit: cover;
+  width: 380px;
+  height: 450px;
 }
 
 /*** UTILITIES ***/
@@ -497,7 +548,7 @@ h1 {
 
 h2 {
   font: 400 var(--font-size-h2) var(--font-secondary);
-  letter-spacing: -0.1px;
+  line-height: 1.1;
 }
 
 h3 {
