@@ -403,10 +403,11 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-content);
   color: var(--color-content-primary);
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 /*** COMPONENTS ***/
@@ -418,7 +419,6 @@ body {
 
 /*** LAYOUT ***/
 header {
-  background-color: red;
   height: 8vh;
 }
 header .wrapper {
@@ -431,13 +431,46 @@ header .wrapper ul {
   display: flex;
 }
 header .wrapper ul li {
-  padding: 0 20px;
+  padding-left: 60px;
 }
 header .hamburger {
   display: none;
 }
 
 /*** SECTIONS ***/
+.hero {
+  display: flex;
+  height: 85vh;
+  position: relative;
+}
+.hero .wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .hero__content {
+  width: 50%;
+  padding-right: 80px;
+}
+.hero .hero__content h1 {
+  padding: 20px 0 10px 0;
+}
+.hero .hero__media {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 85vh;
+  background-image: url("/src/images/green-room-720x885.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*** UTILITIES ***/
 :root {
   --color-content-primary: #000;
@@ -448,6 +481,27 @@ header .hamburger {
   --color-background-secondary: #82A189;
   --color-background-tertiary: #E7E7E9;
   --color-background-action: #82A189;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  --font-tertiary: "Roboto", sans-serif;
+  --font-size-content: 1rem;
+  --font-size-button: 1rem;
+  --font-size-h1: 6rem;
+  --font-size-h2: 3.75rem;
+  --font-size-h3: 1.125rem;
+}
+
+h1 {
+  font: 400 var(--font-size-h1) var(--font-secondary);
+}
+
+h2 {
+  font: 400 var(--font-size-h2) var(--font-secondary);
+  letter-spacing: -0.1px;
+}
+
+h3 {
+  font: 100 var(--font-size-h3) var(--font-tertiary);
 }
 
 /*# sourceMappingURL=main.css.map */

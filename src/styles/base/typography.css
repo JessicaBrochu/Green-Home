@@ -2,8 +2,9 @@ html{
     font-size: 16px;
  }
  body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-content);
     color: var(--color-content-primary);
+    line-height: 1.7;
+    font-weight: 400;
  }
