@@ -1,0 +1,23 @@
+header{
+    background-color: red;
+    height: 8vh;
+
+    .wrapper{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            display: flex;
+            
+            li{
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
