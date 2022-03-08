@@ -499,9 +499,8 @@ header .hamburger {
   padding-right: 80px;
   position: relative;
 }
-.interior-details .interior-details__content .button {
-  position: absolute;
-  bottom: -100px;
+.interior-details .interior-details__content p {
+  padding-bottom: 50px;
 }
 .interior-details .interior-details__content h2 {
   padding: 20px 0 25px 0;
@@ -520,6 +519,44 @@ header .hamburger {
   object-fit: cover;
   width: 380px;
   height: 450px;
+}
+
+.basic-information {
+  display: flex;
+  position: relative;
+  height: 50vh;
+}
+.basic-information .wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.basic-information .basic-information__content {
+  padding-left: 80px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+.basic-information .basic-information__content p {
+  padding-bottom: 50px;
+}
+.basic-information .basic-information__content h2 {
+  padding: 20px 0 25px 0;
+}
+.basic-information .basic-information__media {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("/src/images/plant-care-guide-836x746.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*** UTILITIES ***/
